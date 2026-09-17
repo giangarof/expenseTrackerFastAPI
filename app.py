@@ -19,10 +19,10 @@ router = APIRouter(prefix="/api/analysis", tags=["Analysis"])
 def analysis():
 
     if not income:
-        raise HTTPException()
+        raise HTTPException(status_code=400, detail="No income...")
 
     if not expenses:
-        raise HTTPException()
+        raise HTTPException(status_code=400, detail="No expenses...")
 
     totalIncome = sum(x.ammount for x in income)
     totalExpenses = sum(x.ammount for x in expenses)
