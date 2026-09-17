@@ -1,7 +1,10 @@
-# Expense tracker 
+# Expense tracker
 
 - Second model of my expense tracker series
 - Implemented using FastAPI
+- The second model is about enhancing the first version which was only an app through the terminal
+  - Income and Expenses schemas with validation, pydantic applied
+  - Income and Expenses dedicated routes
 
 ## Version 1
 
